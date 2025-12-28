@@ -72,7 +72,7 @@ export default function MessageForm() {
       
       setHistory(prev => [newItem, ...prev])
       setMessage('')
-    } catch (err) {
+    } catch (_err) {
       setError('Something went wrong. Please try again.')
     } finally {
       setIsLoading(false)
